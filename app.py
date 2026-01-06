@@ -109,9 +109,9 @@ else:
   ex_r = 0
   ex_r = 1 
    
-test_input=[]
-[age,gen_m,sq_index,bf_level,pps_score,stress_level,dep_phq9,fs_scale,pem_dur,sleep_hrs,pem_y,med_y,ws_pw,ws_w,sl_l
-              sl_m,sl_vh,sl_vl,ex_n,ex_of,ex_r,ex_s]
+test_input=[
+[[age,gen_m,sq_index,bf_level,pps_score,stress_level,dep_phq9,fs_scale,pem_dur,sleep_hrs,pem_y,med_y,ws_pw,ws_w,sl_l,
+              sl_m,sl_vh,sl_vl,ex_n,ex_of,ex_r,ex_s]]
 
 
 df_columns = ['age', 'gender', 'sleep_quality_index', 'brain_fog_level',
@@ -125,5 +125,6 @@ df_columns = ['age', 'gender', 'sleep_quality_index', 'brain_fog_level',
        'exercise_frequency_Rarely', 'exercise_frequency_Sometimes']
 
 test_df = pd.DataFrame(test_input,columns=df_columns)
+
 
 st.write(test_df)
